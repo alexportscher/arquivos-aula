@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Navegação</title>
+
+    <style>
+        #btn {
+            padding: -5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Navegação
+        ---------
+        Tipos de navegação:
+            nav-pills
+            nav-tabs
+        Opções de alinhamento:
+            justify-content-center
+            justify-content-end
+            flex-column
+    -->
+
+    <h2>Navegação simples c/ abas</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="#">Em manutenção</a></li>
+    </ul>
+
+    <h2>Navegação simples</h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h2>Navegação responsiva</h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Richard's Motel</a>
+
+        <!-- Menu hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="target">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Navegação com formulário</h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Richard's Motel</a>
+
+        <!-- Menu hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#target2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="target2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+
+            <!-- Form -->
+            <form action="" class="form-inline">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button id="btn" class="btn btn-outline-success"><i class='bx bx-search-alt' ></i></button>
+            </form>
+
+        </div>
+    </nav>
+
+    <h2>Navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Richard's Motel</a>
+
+        <!-- Menu hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#target3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="target3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Sobre</a>
+
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Lorem</a>
+                        <a href="#" class="dropdown-item">Impsum</a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Cores</h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Richard's Motel</a>
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h2>Alinhamentos</h2>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+       <!-- Logo -->
+       <a href="" class="navbar-brand">Richard's Motel</a>
+
+       <!-- Menu hamburguer -->
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!-- Navegação -->
+       <div class="collapse navbar-collapse" id="target">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+           </ul>
+       </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae pariatur nihil deleniti dicta, voluptatum repellat tenetur illo in? Ea hic eaque exercitationem officiis ut recusandae, accusamus dolorem ullam vero quos animi temporibus praesentium quo eius dicta dolor aliquid vel sunt? Fuga similique minima eveniet repellendus quos, voluptas ipsum perferendis dolores incidunt adipisci officia, minus dolorum? Veniam, velit quisquam eum neque saepe, dolorum veritatis similique necessitatibus distinctio cupiditate tempore repudiandae quam aut dignissimos maiores inventore. Temporibus culpa facilis est quasi sint illo iure fugiat reprehenderit quaerat minima sequi repudiandae fuga ipsum laboriosam natus vitae cumque incidunt modi, eius libero nihil aperiam ad aliquam voluptates. Provident cumque ipsum veritatis voluptate hic aperiam pariatur assumenda natus ipsa eaque eos inventore distinctio magnam tenetur vel commodi quo expedita, totam voluptatum cum dolorem aspernatur nihil. Dignissimos tempore beatae, est molestias a tenetur blanditiis placeat, sunt iusto omnis earum repellat laboriosam fugit ut autem inventore itaque! Laboriosam ipsum iste voluptates quos adipisci quibusdam veritatis consectetur perferendis, minima fugit autem temporibus animi placeat. Autem et atque, beatae unde deserunt neque ut repudiandae temporibus, voluptatem mollitia eum ab asperiores. Molestias corporis adipisci, est qui veritatis reprehenderit at molestiae delectus, consectetur recusandae fuga ad consequuntur quibusdam doloremque architecto suscipit! Quisquam minus reprehenderit ullam sapiente accusantium, a libero sed cupiditate reiciendis eveniet vel recusandae, necessitatibus corrupti esse, qui dolore quasi? Deleniti nostrum necessitatibus, unde architecto illum, voluptate recusandae assumenda quam inventore ipsam doloremque maxime, tenetur vel fuga quia dignissimos aliquam aspernatur. Deleniti saepe fugit doloremque. Quos modi natus saepe rerum accusantium fuga autem, provident vel aperiam maxime nostrum eligendi fugiat similique. Quos officiis perspiciatis unde voluptates! Dolorem voluptatum aspernatur perferendis consequuntur deserunt repudiandae. Unde voluptates voluptas amet facere accusamus laborum odit, tenetur magni saepe cupiditate maxime enim obcaecati dolore nesciunt expedita animi nisi, vel hic voluptatum debitis corrupti quis possimus cum eaque? Debitis, suscipit? Explicabo nesciunt nulla non delectus iusto ipsa tempore sunt velit earum, animi eum tempora voluptates nam deleniti accusamus dolorum suscipit ex distinctio qui! Minus, unde expedita. Dicta voluptates architecto, beatae ipsum blanditiis quae assumenda officiis. Beatae placeat facere nostrum laboriosam, dignissimos rerum est. Fugiat similique modi ipsum nihil adipisci blanditiis? Placeat dolore quae excepturi pariatur dicta quibusdam ducimus porro, sapiente nobis laboriosam vel consequuntur a perferendis atque fugiat unde omnis! Deleniti dolore perspiciatis magnam aperiam autem quasi voluptatem reiciendis consectetur tenetur nihil, explicabo nam repellat numquam unde iste nemo vitae eos assumenda iure odit error expedita? Odit nemo velit voluptates porro soluta labore error ipsam quam fugit, quos in incidunt unde accusantium, sapiente, adipisci mollitia culpa? Quia nesciunt officiis, possimus corrupti adipisci et labore, amet exercitationem ullam distinctio similique nihil. Illum dicta, ipsa sequi illo debitis veniam culpa saepe voluptatem animi aut cupiditate autem voluptate molestias sint totam ducimus a voluptatibus tempora esse distinctio magnam! Quod at, ducimus quasi pariatur, adipisci possimus nihil cum eaque voluptate beatae tempore soluta officia odit quam accusantium exercitationem similique repudiandae doloremque ipsam suscipit ex corporis. Corrupti necessitatibus alias distinctio omnis. Ab eaque nihil assumenda quisquam quod ut ullam amet aliquid.
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
